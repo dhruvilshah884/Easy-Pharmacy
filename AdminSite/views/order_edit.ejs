@@ -1,0 +1,26 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>User ID: </td>
+            <td>
+                <input type="text" placeholder="Enter ID " name="user_id" value="<%= db_rows_array[0].user_id %>"
+                    required>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Order Status:</td>
+            <td>
+                <input type="text" placeholder="Order Status " name="order_status"
+                    value="<%= db_rows_array[0].order_status %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="order_view" onclick=" window.location='order_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

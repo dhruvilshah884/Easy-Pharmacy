@@ -1,0 +1,22 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>company Name: </td>
+            <td>
+                <input type="text" placeholder="Enter company Name" name="company_name" value="<%= db_rows_array[0].company_name %>"
+                    required>
+            </td>
+
+        </tr>
+        
+       
+        
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="company_view" onclick=" window.location='company_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

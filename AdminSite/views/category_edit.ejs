@@ -1,0 +1,22 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Category Name: </td>
+            <td>
+                <input type="text" placeholder="Enter Category Name " name="category_name" value="<%= db_rows_array[0].category_name %>"
+                    required>
+            </td>
+
+        </tr>
+        
+       
+        
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="category_view" onclick=" window.location='category_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

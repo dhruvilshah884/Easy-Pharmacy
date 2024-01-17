@@ -1,0 +1,40 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Order ID: </td>
+            <td>
+                <input type="text" placeholder="Enter ID " name="order_id" value="<%= db_rows_array[0].order_id %>"
+                    required>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Product ID:</td>
+            <td>
+                <input type="text" placeholder="Product ID " name="product_id"
+                    value="<%= db_rows_array[0].product_id %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Quantity:</td>
+            <td>
+                <input type="text" placeholder="quantity" name="quantity"
+                    value="<%= db_rows_array[0].quantity %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td>
+                <input type="text" placeholder="Enter Price" name="price"
+                    value="<%= db_rows_array[0].price %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="order_detail_view" onclick=" window.location='order_detail_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

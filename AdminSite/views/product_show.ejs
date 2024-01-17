@@ -1,0 +1,69 @@
+<table>
+    <tbody>
+        <tr>
+            <th>Product ID</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].product_id %>
+            </td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].product_name %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].product_price %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Detail</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].product_details %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Stock</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].product_stock %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Company ID</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].company_id %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Category ID</th>
+            <td>:</td>
+            <td>
+                <%= db_rows_array[0].category_id %>
+            </td>
+
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td>:</td>
+            <td>
+                <img src="/uploads/<%= db_rows_array[0].product_image %>"style="
+                width: 100px;">
+            </td>
+
+        </tr>
+        
+    </tbody>
+</table>

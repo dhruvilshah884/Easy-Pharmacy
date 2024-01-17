@@ -1,0 +1,61 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Product Name: </td>
+            <td>
+                <input type="text" placeholder="Enter Product Name " name="product_name" value="<%= db_rows_array[0].product_name %>"
+                    required>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Product ID: </td>
+            <td>
+                <input type="text" placeholder="Enter price " name="product_price"
+                    value="<%= db_rows_array[0].product_price %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Quantity: </td>
+            <td>
+                <input type="text" placeholder="Product Detail" name="product_details"
+                    value="<%= db_rows_array[0].product_details %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Stock: </td>
+            <td>
+                <input type="text" placeholder="Enter Stock" name="product_stock"
+                    value="<%= db_rows_array[0].product_stock %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>company ID: </td>
+            <td>
+                <input type="text" placeholder="Enter Company ID" name="company_id"
+                    value="<%= db_rows_array[0].company_id %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Category ID: </td>
+            <td>
+                <input type="text" placeholder="Enter Category ID" name="category_id"
+                    value="<%= db_rows_array[0].category_id %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Image: </td>
+            <td>
+                <input type="file" placeholder="Enter Image" name="product_image"
+                    value="<%= db_rows_array[0].product_image %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="order_detail_view" onclick=" window.location='order_detail_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

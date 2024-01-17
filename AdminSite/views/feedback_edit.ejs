@@ -1,0 +1,34 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>User ID: </td>
+            <td>
+                <input type="text" placeholder="Enter User ID " name="user_id" value="<%= db_rows_array[0].user_id %>"
+                    required>
+            </td>
+
+        </tr>
+        
+        <tr>
+            <td>Date: </td>
+            <td><input type="date" placeholder="Feedback Date" name="feedback_date"
+                    value="<%= db_rows_array[0].feedback_date %>" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td>
+                <input type="text" placeholder="Enter Message" name="feedback_message"
+                    value="<%= db_rows_array[0].feedback_message %>" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="feedback_view" onclick=" window.location='feedback_view' ">
+            </td>
+        </tr>
+    </table>
+
+</form>

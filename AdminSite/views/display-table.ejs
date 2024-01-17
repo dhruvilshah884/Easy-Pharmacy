@@ -1,0 +1,26 @@
+<% if(db_rows_array.length> 0){ %>
+    <table border="2" width="10%" bgcolor="white">
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>price</th>
+
+        </tr>
+        <% for(var i=0; i <db_rows_array.length;i++) { %>
+            <tr>
+                <td>
+                    <%= db_rows_array[i].user_id %>
+                </td>
+                <td>
+                    <%= db_rows_array[i].product_name %>
+                </td>
+                <td>
+                    <%= db_rows_array[i].product_price %>
+                </td>
+
+            </tr>
+            <% } %>
+    </table>
+    <% } else { %>
+        no record found
+        <% } %>
