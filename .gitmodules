@@ -1,0 +1,3 @@
+[submodule "UserSite"]
+	path = UserSite
+	url = https://github.com/username/repository.git
